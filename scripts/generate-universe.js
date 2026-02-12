@@ -10,7 +10,7 @@ function randomBetween(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-// Fake data (we replace later with real GitHub data)
+// Temporary fake commit data (Step A will replace this)
 let weeks = Array.from({ length: TOTAL_WEEKS }, () => ({
   commits: Math.floor(randomBetween(0, 50))
 }));
@@ -20,9 +20,9 @@ let planets = weeks.map((week, i) => {
   return {
     size: 4 + week.commits * 0.18,
     orbit: baseOrbit + i * 5,
-    speed: 50 + i * 1.5,
+    speed: 40 + i * 1.2,
     hue: 190 + week.commits * 2,
-    opacity: 0.4 + (week.commits / 50)
+    opacity: 0.4 + (week.commits / 60)
   };
 });
 
@@ -32,7 +32,7 @@ let svg = `
 <defs>
   <!-- Glow -->
   <filter id="glow">
-    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feGaussianBlur stdDeviation="10" result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
@@ -41,12 +41,12 @@ let svg = `
 
   <!-- Glass Blur -->
   <filter id="glassBlur">
-    <feGaussianBlur stdDeviation="10"/>
+    <feGaussianBlur stdDeviation="12"/>
   </filter>
 
   <!-- Nebula Gradient -->
-  <radialGradient id="nebula" cx="50%" cy="50%" r="50%">
-    <stop offset="0%" stop-color="#1a2a6c" stop-opacity="0.6"/>
+  <radialGradient id="nebula" cx="50%" cy="50%" r="60%">
+    <stop offset="0%" stop-color="#1a2a6c" stop-opacity="0.7"/>
     <stop offset="100%" stop-color="#0b0f1a" stop-opacity="0"/>
   </radialGradient>
 </defs>
@@ -71,11 +71,13 @@ let svg = `
 <!-- Space Background -->
 <rect width="100%" height="100%" fill="#0b0f1a"/>
 
-<!-- Nebula Glow -->
-<circle cx="${CENTER_X}" cy="${CENTER_Y}" r="300" fill="url(#nebula)" opacity="0.4"/>
+<!-- Nebula -->
+<circle cx="${CENTER_X}" cy="${CENTER_Y}" r="320"
+        fill="url(#nebula)"
+        opacity="0.5"/>
 
 <!-- Starfield Far -->
-<g opacity="0.3" style="animation: driftSlow 140s linear infinite;">
+<g opacity="0.3" style="animation: driftSlow 150s linear infinite;">
   ${Array.from({ length: 100 }).map(() => `
     <circle cx="${Math.random() * WIDTH}"
             cy="${Math.random() * HEIGHT}"
@@ -96,63 +98,80 @@ let svg = `
 
 <!-- Orbit Rings -->
 ${planets.map(p => `
-  <circle cx="${CENTER_X}" cy="${CENTER_Y}"
-          r="${p.orbit}"
-          fill="none"
-          stroke="white"
-          stroke-opacity="0.05"/>
+  <ellipse cx="${CENTER_X}" cy="${CENTER_Y}"
+           rx="${p.orbit}"
+           ry="${p.orbit * 0.75}"
+           fill="none"
+           stroke="white"
+           stroke-opacity="0.06"/>
 `).join("")}
+
+<!-- Core Halo -->
+<circle cx="${CENTER_X}" cy="${CENTER_Y}" r="95"
+        fill="cyan"
+        opacity="0.08"
+        filter="url(#glow)"/>
 
 <!-- Core -->
 <circle cx="${CENTER_X}" cy="${CENTER_Y}" r="45"
         fill="cyan"
-        opacity="0.8"
+        opacity="0.85"
         filter="url(#glow)">
   <animate attributeName="r"
-           values="42;50;42"
+           values="42;52;42"
            dur="4s"
            repeatCount="indefinite"/>
 </circle>
 `;
 
-// Planets
-planets.forEach((planet) => {
+// Planets (Elliptical + Mixed Direction)
+planets.forEach((planet, index) => {
+
+  const direction = index % 2 === 0 ? "normal" : "reverse";
+  const scaleY = 0.75;
+
   svg += `
-  <g style="transform-origin:${CENTER_X}px ${CENTER_Y}px;
-            animation: rotate ${planet.speed}s linear infinite;">
-    <circle cx="${CENTER_X + planet.orbit}"
-            cy="${CENTER_Y}"
-            r="${planet.size}"
-            fill="hsl(${planet.hue}, 80%, 60%)"
-            opacity="${planet.opacity}" />
+  <g style="
+      transform-origin:${CENTER_X}px ${CENTER_Y}px;
+      animation: rotate ${planet.speed}s linear infinite;
+      animation-direction: ${direction};
+    ">
+    <ellipse
+      cx="${CENTER_X + planet.orbit}"
+      cy="${CENTER_Y}"
+      rx="${planet.size}"
+      ry="${planet.size * scaleY}"
+      fill="hsl(${planet.hue}, 80%, 60%)"
+      opacity="${planet.opacity}"
+    />
   </g>
   `;
 });
 
-// Glass Panel
+// Glass Panel (Softer + Premium)
 svg += `
 <g filter="url(#glassBlur)">
   <rect x="250"
         y="150"
         width="400"
         height="200"
-        rx="25"
+        rx="30"
         fill="white"
-        opacity="0.07"/>
+        opacity="0.04"/>
 </g>
 
 <rect x="250"
       y="150"
       width="400"
       height="200"
-      rx="25"
+      rx="30"
       fill="white"
-      opacity="0.05"
+      opacity="0.03"
       stroke="white"
-      stroke-opacity="0.2"/>
+      stroke-opacity="0.25"/>
 </svg>
 `;
 
 fs.writeFileSync("assets/universe.svg", svg);
 
-console.log("Upgraded Universe generated.");
+console.log("Universe depth version generated.");
