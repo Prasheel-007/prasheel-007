@@ -1,51 +1,54 @@
 const fs = require("fs");
 
-// ---------- CONFIG ----------
 const WIDTH = 900;
 const HEIGHT = 500;
 const CENTER_X = WIDTH / 2;
 const CENTER_Y = HEIGHT / 2;
 const TOTAL_WEEKS = 52;
 
-// ---------- UTILS ----------
 function randomBetween(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-// Fake weekly commit data (next step we replace with real GitHub data)
+// Fake data (we replace later with real GitHub data)
 let weeks = Array.from({ length: TOTAL_WEEKS }, () => ({
   commits: Math.floor(randomBetween(0, 50))
 }));
 
-// Convert commits to planet properties
 let planets = weeks.map((week, i) => {
-  const baseOrbit = 80;
+  const baseOrbit = 70;
   return {
-    size: 4 + week.commits * 0.15,
-    orbit: baseOrbit + i * 6,
-    speed: 40 + i * 1.2,
-    hue: 180 + week.commits * 2
+    size: 4 + week.commits * 0.18,
+    orbit: baseOrbit + i * 5,
+    speed: 50 + i * 1.5,
+    hue: 190 + week.commits * 2,
+    opacity: 0.4 + (week.commits / 50)
   };
 });
 
-// ---------- SVG START ----------
 let svg = `
 <svg width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}" xmlns="http://www.w3.org/2000/svg">
 
 <defs>
-  <!-- Glass Blur -->
-  <filter id="glassBlur">
-    <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
-  </filter>
-
-  <!-- Soft Glow -->
+  <!-- Glow -->
   <filter id="glow">
-    <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+    <feGaussianBlur stdDeviation="8" result="blur"/>
     <feMerge>
-      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
+
+  <!-- Glass Blur -->
+  <filter id="glassBlur">
+    <feGaussianBlur stdDeviation="10"/>
+  </filter>
+
+  <!-- Nebula Gradient -->
+  <radialGradient id="nebula" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#1a2a6c" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#0b0f1a" stop-opacity="0"/>
+  </radialGradient>
 </defs>
 
 <style>
@@ -68,8 +71,11 @@ let svg = `
 <!-- Space Background -->
 <rect width="100%" height="100%" fill="#0b0f1a"/>
 
-<!-- Starfield Layer 1 (Far) -->
-<g opacity="0.3" style="animation: driftSlow 120s linear infinite;">
+<!-- Nebula Glow -->
+<circle cx="${CENTER_X}" cy="${CENTER_Y}" r="300" fill="url(#nebula)" opacity="0.4"/>
+
+<!-- Starfield Far -->
+<g opacity="0.3" style="animation: driftSlow 140s linear infinite;">
   ${Array.from({ length: 100 }).map(() => `
     <circle cx="${Math.random() * WIDTH}"
             cy="${Math.random() * HEIGHT}"
@@ -78,8 +84,8 @@ let svg = `
   `).join("")}
 </g>
 
-<!-- Starfield Layer 2 (Near) -->
-<g opacity="0.5" style="animation: driftMedium 60s linear infinite;">
+<!-- Starfield Near -->
+<g opacity="0.6" style="animation: driftMedium 80s linear infinite;">
   ${Array.from({ length: 60 }).map(() => `
     <circle cx="${Math.random() * WIDTH}"
             cy="${Math.random() * HEIGHT}"
@@ -88,19 +94,28 @@ let svg = `
   `).join("")}
 </g>
 
+<!-- Orbit Rings -->
+${planets.map(p => `
+  <circle cx="${CENTER_X}" cy="${CENTER_Y}"
+          r="${p.orbit}"
+          fill="none"
+          stroke="white"
+          stroke-opacity="0.05"/>
+`).join("")}
+
 <!-- Core -->
-<circle cx="${CENTER_X}" cy="${CENTER_Y}" r="40"
+<circle cx="${CENTER_X}" cy="${CENTER_Y}" r="45"
         fill="cyan"
-        opacity="0.7"
+        opacity="0.8"
         filter="url(#glow)">
   <animate attributeName="r"
-           values="38;44;38"
-           dur="3s"
+           values="42;50;42"
+           dur="4s"
            repeatCount="indefinite"/>
 </circle>
 `;
 
-// ---------- PLANETS ----------
+// Planets
 planets.forEach((planet) => {
   svg += `
   <g style="transform-origin:${CENTER_X}px ${CENTER_Y}px;
@@ -109,38 +124,35 @@ planets.forEach((planet) => {
             cy="${CENTER_Y}"
             r="${planet.size}"
             fill="hsl(${planet.hue}, 80%, 60%)"
-            opacity="0.85" />
+            opacity="${planet.opacity}" />
   </g>
   `;
 });
 
-// ---------- GLASS PANEL ----------
+// Glass Panel
 svg += `
-<!-- Glass Floating Panel -->
 <g filter="url(#glassBlur)">
   <rect x="250"
         y="150"
         width="400"
         height="200"
-        rx="20"
+        rx="25"
         fill="white"
-        opacity="0.08"/>
+        opacity="0.07"/>
 </g>
 
 <rect x="250"
       y="150"
       width="400"
       height="200"
-      rx="20"
+      rx="25"
       fill="white"
       opacity="0.05"
       stroke="white"
       stroke-opacity="0.2"/>
-
 </svg>
 `;
 
-// ---------- SAVE FILE ----------
 fs.writeFileSync("assets/universe.svg", svg);
 
-console.log("Universe SVG generated successfully.");
+console.log("Upgraded Universe generated.");
