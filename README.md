@@ -15,13 +15,13 @@
 ![](https://nirzak-streak-stats.vercel.app/?user=prasheel-007&theme=merko&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=prasheel-007&theme=merko&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-### 📈 Contribution Graph ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=prasheel-007&theme=merko)
-### 🔝 Top Contributed Repo
+# 📈 Contribution Graph ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=prasheel-007&theme=merko)
+# 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=prasheel-007&limit=5&theme=codeSTACKr&combine_all_yearly_contributions=true)
 
-# 🌌 Dev Universe
+# 🌌 Universe
 
-![Universe](./assets/universe.svg)
+<img src="https://raw.githubusercontent.com/prasheel-007/prasheel-007/main/assets/universe.svg" />
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=merko)
