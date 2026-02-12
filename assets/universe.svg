@@ -1,41 +1,11 @@
 
 <svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
 
-<defs>
-  <filter id="glow">
-    <feGaussianBlur stdDeviation="10" result="blur"/>
-    <feMerge>
-      <feMergeNode in="blur"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
-
-  <filter id="glassBlur">
-    <feGaussianBlur stdDeviation="12"/>
-  </filter>
-
-  <radialGradient id="nebula" cx="50%" cy="50%" r="60%">
-    <stop offset="0%" stop-color="#1a2a6c" stop-opacity="0.7"/>
-    <stop offset="100%" stop-color="#0b0f1a" stop-opacity="0"/>
-  </radialGradient>
-</defs>
-
 <style>
 @keyframes rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
-@keyframes driftSlow {
-  from { transform: translateX(0px); }
-  to { transform: translateX(-200px); }
-}
-
-@keyframes driftMedium {
-  from { transform: translateX(0px); }
-  to { transform: translateX(-300px); }
-}
-
 text {
   font-family: Arial, sans-serif;
   fill: white;
@@ -44,1600 +14,500 @@ text {
 
 <rect width="100%" height="100%" fill="#0b0f1a"/>
 
-<circle cx="450" cy="250" r="320"
-        fill="url(#nebula)"
-        opacity="0.5"/>
-
-<g opacity="0.3" style="animation: driftSlow 150s linear infinite;">
-  
-    <circle cx="185.21087182283304"
-            cy="72.98263092303281"
-            r="1.2366773059950642"
-            fill="white" />
-  
-    <circle cx="751.8249183807224"
-            cy="404.8306219197536"
-            r="0.9597676498755573"
-            fill="white" />
-  
-    <circle cx="715.5388697758907"
-            cy="118.90317980921061"
-            r="0.04919725587237478"
-            fill="white" />
-  
-    <circle cx="459.24554352136954"
-            cy="138.7744429025456"
-            r="1.2990247775726544"
-            fill="white" />
-  
-    <circle cx="74.64680638240606"
-            cy="471.30317694546034"
-            r="0.19353761159391836"
-            fill="white" />
-  
-    <circle cx="221.3163541893471"
-            cy="446.52610910550663"
-            r="1.3636898157280433"
-            fill="white" />
-  
-    <circle cx="52.34996196888877"
-            cy="442.0932540697082"
-            r="0.18954952962654592"
-            fill="white" />
-  
-    <circle cx="367.1182035429041"
-            cy="101.96968819972408"
-            r="0.2764396281821683"
-            fill="white" />
-  
-    <circle cx="94.63766895097929"
-            cy="350.5954459030783"
-            r="0.06363069525343135"
-            fill="white" />
-  
-    <circle cx="723.2164038457884"
-            cy="311.62162704975526"
-            r="0.021529969939455107"
-            fill="white" />
-  
-    <circle cx="877.2496530267041"
-            cy="148.0029639610625"
-            r="0.6674063380252281"
-            fill="white" />
-  
-    <circle cx="516.2620060504512"
-            cy="474.5863717425226"
-            r="0.6726853383620238"
-            fill="white" />
-  
-    <circle cx="727.1791907986208"
-            cy="400.9409810696396"
-            r="1.393823671034557"
-            fill="white" />
-  
-    <circle cx="894.4318274445593"
-            cy="236.56966783550104"
-            r="0.3172866748584545"
-            fill="white" />
-  
-    <circle cx="469.0522445788113"
-            cy="125.04738273428218"
-            r="1.4388385160495505"
-            fill="white" />
-  
-    <circle cx="675.1926318635967"
-            cy="350.5915119326042"
-            r="0.19356810850769068"
-            fill="white" />
-  
-    <circle cx="291.777751045301"
-            cy="48.352743315306036"
-            r="0.343713362179514"
-            fill="white" />
-  
-    <circle cx="244.4047528950831"
-            cy="2.319663322990495"
-            r="1.0503135267367103"
-            fill="white" />
-  
-    <circle cx="385.11906712463104"
-            cy="347.7041974667896"
-            r="1.054961696866581"
-            fill="white" />
-  
-    <circle cx="247.74644692173996"
-            cy="391.40297334791904"
-            r="1.1244478574791081"
-            fill="white" />
-  
-    <circle cx="882.8066699933273"
-            cy="35.02776219550996"
-            r="0.6010328915750713"
-            fill="white" />
-  
-    <circle cx="500.12265160466205"
-            cy="359.5383951390261"
-            r="1.036144231333651"
-            fill="white" />
-  
-    <circle cx="89.51819685321266"
-            cy="214.6120528365303"
-            r="0.2525552582591919"
-            fill="white" />
-  
-    <circle cx="0.5304633539388925"
-            cy="335.06181852295447"
-            r="0.43102113307123013"
-            fill="white" />
-  
-    <circle cx="774.3644975263798"
-            cy="43.07165829339399"
-            r="1.3903454218730722"
-            fill="white" />
-  
-    <circle cx="285.1485012739399"
-            cy="98.17088892244796"
-            r="1.2094601578334037"
-            fill="white" />
-  
-    <circle cx="625.6036131020923"
-            cy="336.61877078746016"
-            r="0.01581450488626468"
-            fill="white" />
-  
-    <circle cx="540.0890939715712"
-            cy="153.0460019845432"
-            r="0.22814725787130408"
-            fill="white" />
-  
-    <circle cx="703.431482884085"
-            cy="476.6857686717353"
-            r="0.08860162489545143"
-            fill="white" />
-  
-    <circle cx="549.5299533604466"
-            cy="93.3862767419894"
-            r="0.6138925296404993"
-            fill="white" />
-  
-    <circle cx="212.1878902310079"
-            cy="89.40610134673909"
-            r="0.3869070994558865"
-            fill="white" />
-  
-    <circle cx="532.5420825897559"
-            cy="21.69232778541086"
-            r="0.5493852060532088"
-            fill="white" />
-  
-    <circle cx="631.0927637008964"
-            cy="32.04816536998123"
-            r="0.7212048496582188"
-            fill="white" />
-  
-    <circle cx="873.3311792751244"
-            cy="14.980764321237295"
-            r="0.4695022142581624"
-            fill="white" />
-  
-    <circle cx="890.1781440125499"
-            cy="305.3751106621151"
-            r="0.37724628372870805"
-            fill="white" />
-  
-    <circle cx="475.4811310790653"
-            cy="13.388738392560274"
-            r="0.9431757561891718"
-            fill="white" />
-  
-    <circle cx="188.56268152884226"
-            cy="223.10828590545395"
-            r="1.493843744567147"
-            fill="white" />
-  
-    <circle cx="319.3135324389399"
-            cy="230.72074772961128"
-            r="1.3515978080938846"
-            fill="white" />
-  
-    <circle cx="313.56834283165153"
-            cy="112.24827330957798"
-            r="0.8384292009535564"
-            fill="white" />
-  
-    <circle cx="77.38297748628646"
-            cy="497.9526642479998"
-            r="0.4300608571484389"
-            fill="white" />
-  
-    <circle cx="286.7450843671295"
-            cy="463.13959123396495"
-            r="0.5245694330972149"
-            fill="white" />
-  
-    <circle cx="730.8249751806578"
-            cy="161.4879231865618"
-            r="1.2782321475054195"
-            fill="white" />
-  
-    <circle cx="877.6945826915323"
-            cy="255.46536624949147"
-            r="1.1411963805949545"
-            fill="white" />
-  
-    <circle cx="272.8859123821912"
-            cy="426.6497095056837"
-            r="0.5535367347230697"
-            fill="white" />
-  
-    <circle cx="126.73058063738527"
-            cy="47.14091921662033"
-            r="0.4193107157217857"
-            fill="white" />
-  
-    <circle cx="422.4203633086997"
-            cy="376.47867189076766"
-            r="0.7118287246695492"
-            fill="white" />
-  
-    <circle cx="379.4060634931269"
-            cy="420.0293881820975"
-            r="0.8585772170790089"
-            fill="white" />
-  
-    <circle cx="508.3972425459412"
-            cy="185.2115608777237"
-            r="0.2132908549507616"
-            fill="white" />
-  
-    <circle cx="807.1628045433648"
-            cy="33.109773185740934"
-            r="1.2556647307882303"
-            fill="white" />
-  
-    <circle cx="874.1487882540457"
-            cy="443.07498917979484"
-            r="0.8547312400502485"
-            fill="white" />
-  
-    <circle cx="135.74963819257243"
-            cy="375.0696459994777"
-            r="0.22032161269903183"
-            fill="white" />
-  
-    <circle cx="785.5761297973833"
-            cy="346.3491973805195"
-            r="0.36463331811425237"
-            fill="white" />
-  
-    <circle cx="146.5145571558173"
-            cy="274.03310589746286"
-            r="0.01798486450031911"
-            fill="white" />
-  
-    <circle cx="805.8549373234392"
-            cy="182.93957307778808"
-            r="0.8244923121348886"
-            fill="white" />
-  
-    <circle cx="459.57852531357986"
-            cy="241.88545109750592"
-            r="0.5219789076062216"
-            fill="white" />
-  
-    <circle cx="751.4010035979628"
-            cy="365.17394854178286"
-            r="0.45446350621022746"
-            fill="white" />
-  
-    <circle cx="417.6675267305004"
-            cy="308.07749344788135"
-            r="1.3747535361426821"
-            fill="white" />
-  
-    <circle cx="898.0028842906871"
-            cy="174.18177725553107"
-            r="1.3607998442571954"
-            fill="white" />
-  
-    <circle cx="653.6637820738063"
-            cy="428.9524877236536"
-            r="0.6013516221301956"
-            fill="white" />
-  
-    <circle cx="802.1447912666292"
-            cy="239.9520856139794"
-            r="0.6917218405209262"
-            fill="white" />
-  
-    <circle cx="630.1302641296562"
-            cy="57.40808517073381"
-            r="1.3369739575714104"
-            fill="white" />
-  
-    <circle cx="853.1956722541629"
-            cy="186.2755589800763"
-            r="0.9663573567143878"
-            fill="white" />
-  
-    <circle cx="155.8573554777493"
-            cy="286.1779989291756"
-            r="0.7331145581380196"
-            fill="white" />
-  
-    <circle cx="484.5329474925918"
-            cy="320.7926342604838"
-            r="0.5046525270217712"
-            fill="white" />
-  
-    <circle cx="509.50431202266043"
-            cy="54.94337410849237"
-            r="0.0740088525388678"
-            fill="white" />
-  
-    <circle cx="208.3992903132466"
-            cy="335.5549937510516"
-            r="0.49392749702766137"
-            fill="white" />
-  
-    <circle cx="97.77616293903712"
-            cy="65.77786388365092"
-            r="0.43320902312556464"
-            fill="white" />
-  
-    <circle cx="589.7227920541411"
-            cy="290.7271074465304"
-            r="0.8660444547416587"
-            fill="white" />
-  
-    <circle cx="108.07230738496145"
-            cy="168.21254608325808"
-            r="0.13482219699719178"
-            fill="white" />
-  
-    <circle cx="330.1540853736798"
-            cy="389.30008134876806"
-            r="0.4936283481238186"
-            fill="white" />
-  
-    <circle cx="50.129908632576445"
-            cy="348.49458375665523"
-            r="1.134841648983917"
-            fill="white" />
-  
-    <circle cx="543.0899169093482"
-            cy="305.0081003432773"
-            r="1.0275588620374236"
-            fill="white" />
-  
-    <circle cx="89.82065332703957"
-            cy="368.5524487814379"
-            r="1.211236850035371"
-            fill="white" />
-  
-    <circle cx="63.82245277968699"
-            cy="264.19290058124614"
-            r="0.4899771411328978"
-            fill="white" />
-  
-    <circle cx="44.65640316136788"
-            cy="102.03435529671434"
-            r="0.7201856838566661"
-            fill="white" />
-  
-    <circle cx="217.21713599051623"
-            cy="225.24203091137295"
-            r="1.0602799019102864"
-            fill="white" />
-  
-    <circle cx="209.82845855635642"
-            cy="331.5114469450644"
-            r="1.1076595516318348"
-            fill="white" />
-  
-    <circle cx="95.05030575679727"
-            cy="117.17382771655049"
-            r="1.3223847905263797"
-            fill="white" />
-  
-    <circle cx="554.3310943936661"
-            cy="474.78416913156775"
-            r="0.11388239112901777"
-            fill="white" />
-  
-    <circle cx="131.07438007097926"
-            cy="482.02441654296956"
-            r="0.7484580289446326"
-            fill="white" />
-  
-    <circle cx="652.5365200019684"
-            cy="148.10315099446248"
-            r="0.17331914966548356"
-            fill="white" />
-  
-    <circle cx="329.1061927916896"
-            cy="241.30590155706832"
-            r="0.5084995223515658"
-            fill="white" />
-  
-    <circle cx="801.5440257524201"
-            cy="415.8676494505794"
-            r="1.354263212669756"
-            fill="white" />
-  
-    <circle cx="314.29260671068255"
-            cy="199.07574999854893"
-            r="1.0079486783762883"
-            fill="white" />
-  
-    <circle cx="53.227126465382746"
-            cy="133.2587541803567"
-            r="0.2592380767380973"
-            fill="white" />
-  
-    <circle cx="669.6341698246056"
-            cy="476.96694136746"
-            r="0.35549631079557886"
-            fill="white" />
-  
-    <circle cx="137.25882080455526"
-            cy="281.74737372320624"
-            r="0.02358389504096603"
-            fill="white" />
-  
-    <circle cx="423.6900964222299"
-            cy="194.29845362301577"
-            r="1.4298650510416646"
-            fill="white" />
-  
-    <circle cx="288.7608043999017"
-            cy="381.8986056551793"
-            r="0.9258787145486421"
-            fill="white" />
-  
-    <circle cx="683.1714704098468"
-            cy="316.76804827533243"
-            r="1.20724044395598"
-            fill="white" />
-  
-    <circle cx="576.5260017805235"
-            cy="352.8294473238034"
-            r="1.3083484378197832"
-            fill="white" />
-  
-    <circle cx="587.5874304797749"
-            cy="63.19107678698765"
-            r="0.47849461540041305"
-            fill="white" />
-  
-    <circle cx="666.8257854585204"
-            cy="22.711867384656912"
-            r="0.8944140998626832"
-            fill="white" />
-  
-    <circle cx="861.9326304386467"
-            cy="496.00765492963205"
-            r="0.8293566442978035"
-            fill="white" />
-  
-    <circle cx="85.68095756459817"
-            cy="225.03643643318216"
-            r="0.045701520034793996"
-            fill="white" />
-  
-    <circle cx="220.47611012774107"
-            cy="84.73670903975561"
-            r="0.5758902073931088"
-            fill="white" />
-  
-    <circle cx="893.6574034346368"
-            cy="326.0581033632517"
-            r="0.9123352939266327"
-            fill="white" />
-  
-    <circle cx="414.4918746203877"
-            cy="56.52182983153775"
-            r="0.5577013871308221"
-            fill="white" />
-  
-    <circle cx="823.4090563460868"
-            cy="45.134045652150625"
-            r="0.2383777202435463"
-            fill="white" />
-  
-    <circle cx="667.7146385006836"
-            cy="427.8868619150299"
-            r="1.0619170952852823"
-            fill="white" />
-  
-</g>
-
-<g opacity="0.6" style="animation: driftMedium 80s linear infinite;">
-  
-    <circle cx="102.95095510786459"
-            cy="315.74797859739124"
-            r="0.1904741865591273"
-            fill="white" />
-  
-    <circle cx="372.003272961583"
-            cy="428.2122651489909"
-            r="0.955713220618323"
-            fill="white" />
-  
-    <circle cx="218.20420750080118"
-            cy="345.57211135243693"
-            r="1.8082285910339992"
-            fill="white" />
-  
-    <circle cx="447.114389316918"
-            cy="26.596938674379068"
-            r="0.48496706469681383"
-            fill="white" />
-  
-    <circle cx="483.3372542020138"
-            cy="351.21208539443825"
-            r="0.4008572193808684"
-            fill="white" />
-  
-    <circle cx="124.48610978399148"
-            cy="1.0308662027164184"
-            r="1.2242738598534388"
-            fill="white" />
-  
-    <circle cx="245.56823565130892"
-            cy="262.6005036575123"
-            r="1.4837163670459006"
-            fill="white" />
-  
-    <circle cx="38.04565349848996"
-            cy="319.1412138677846"
-            r="0.4398735929046267"
-            fill="white" />
-  
-    <circle cx="830.5878066804228"
-            cy="102.72120698572063"
-            r="1.2232387701703225"
-            fill="white" />
-  
-    <circle cx="71.1598350671228"
-            cy="414.85007777542324"
-            r="0.3848969797787194"
-            fill="white" />
-  
-    <circle cx="477.42820355933804"
-            cy="219.8948725411888"
-            r="1.8563642328918446"
-            fill="white" />
-  
-    <circle cx="635.367427970232"
-            cy="140.9528295166923"
-            r="0.09288310208323258"
-            fill="white" />
-  
-    <circle cx="71.59849499516788"
-            cy="153.22395083547568"
-            r="0.768271260401455"
-            fill="white" />
-  
-    <circle cx="589.8300518752891"
-            cy="173.43453256455888"
-            r="1.5303929419383415"
-            fill="white" />
-  
-    <circle cx="442.6569594526302"
-            cy="456.47885458074455"
-            r="1.5936761793093095"
-            fill="white" />
-  
-    <circle cx="868.8815296068909"
-            cy="383.77225227874834"
-            r="1.1181263292858818"
-            fill="white" />
-  
-    <circle cx="472.0912958742719"
-            cy="40.023333665503145"
-            r="0.6713506652587737"
-            fill="white" />
-  
-    <circle cx="448.5390803885079"
-            cy="268.67321970787674"
-            r="1.4967218130440259"
-            fill="white" />
-  
-    <circle cx="333.88839587317216"
-            cy="311.2755711648706"
-            r="1.4871071577050277"
-            fill="white" />
-  
-    <circle cx="805.8513271711732"
-            cy="366.9009135879023"
-            r="1.9601999856744263"
-            fill="white" />
-  
-    <circle cx="509.5113322298728"
-            cy="259.60731107774416"
-            r="1.0533365186637051"
-            fill="white" />
-  
-    <circle cx="302.7430052553105"
-            cy="467.09246931322747"
-            r="0.29571762390655865"
-            fill="white" />
-  
-    <circle cx="581.9953074303911"
-            cy="422.4181976378365"
-            r="0.04731642805154879"
-            fill="white" />
-  
-    <circle cx="760.698833663577"
-            cy="277.80630074528057"
-            r="1.4323277185119192"
-            fill="white" />
-  
-    <circle cx="153.6798556221801"
-            cy="63.935740934776945"
-            r="0.03741146602051204"
-            fill="white" />
-  
-    <circle cx="347.57472853715706"
-            cy="393.21665076566194"
-            r="1.9712212904069095"
-            fill="white" />
-  
-    <circle cx="794.7840042228435"
-            cy="168.98484732495166"
-            r="1.8264203941188248"
-            fill="white" />
-  
-    <circle cx="433.6573826486898"
-            cy="366.4867973909132"
-            r="1.5854272936229505"
-            fill="white" />
-  
-    <circle cx="365.0825595109614"
-            cy="70.40259457091358"
-            r="1.0844394649521871"
-            fill="white" />
-  
-    <circle cx="606.737674252163"
-            cy="262.59044561624665"
-            r="1.7811691249745465"
-            fill="white" />
-  
-    <circle cx="344.5310372843829"
-            cy="329.94968698568107"
-            r="1.0080013946517625"
-            fill="white" />
-  
-    <circle cx="291.06908236617943"
-            cy="430.5424726892736"
-            r="1.0751326150735498"
-            fill="white" />
-  
-    <circle cx="553.7405319586928"
-            cy="181.2322795444188"
-            r="1.1695268945593895"
-            fill="white" />
-  
-    <circle cx="637.0243712635291"
-            cy="93.82546332952334"
-            r="1.1402836039770303"
-            fill="white" />
-  
-    <circle cx="662.4965195522194"
-            cy="286.18936217586645"
-            r="0.6898604545117584"
-            fill="white" />
-  
-    <circle cx="471.891042052299"
-            cy="45.14388959262649"
-            r="0.3737222542458607"
-            fill="white" />
-  
-    <circle cx="266.8115025701904"
-            cy="3.4408210635324954"
-            r="0.954547449978596"
-            fill="white" />
-  
-    <circle cx="409.1715281836429"
-            cy="141.91492062445755"
-            r="1.0963277077518896"
-            fill="white" />
-  
-    <circle cx="340.3645607457468"
-            cy="243.00781286644946"
-            r="1.8510405871419633"
-            fill="white" />
-  
-    <circle cx="692.9515243767758"
-            cy="18.136210911420925"
-            r="0.03515190647765554"
-            fill="white" />
-  
-    <circle cx="174.29973044091773"
-            cy="236.44323947227096"
-            r="0.6113145413278676"
-            fill="white" />
-  
-    <circle cx="148.3513834455196"
-            cy="120.48723402916484"
-            r="1.0836919818120587"
-            fill="white" />
-  
-    <circle cx="417.37980617599027"
-            cy="253.96844698716004"
-            r="0.1532194383190526"
-            fill="white" />
-  
-    <circle cx="575.4420014128217"
-            cy="70.03865110037111"
-            r="0.6370164919497201"
-            fill="white" />
-  
-    <circle cx="748.565338389601"
-            cy="164.46553573910373"
-            r="1.3813479394022599"
-            fill="white" />
-  
-    <circle cx="31.359413849776452"
-            cy="290.0078399690783"
-            r="1.001852062227326"
-            fill="white" />
-  
-    <circle cx="438.76974195389107"
-            cy="9.948133000852511"
-            r="0.33679421504338913"
-            fill="white" />
-  
-    <circle cx="46.61777306265893"
-            cy="124.50379735712846"
-            r="1.398001074841062"
-            fill="white" />
-  
-    <circle cx="456.33345174497936"
-            cy="171.36862233858497"
-            r="0.8855811722251401"
-            fill="white" />
-  
-    <circle cx="647.1547673714698"
-            cy="332.9057924530695"
-            r="1.6635109843158973"
-            fill="white" />
-  
-    <circle cx="150.4403110135267"
-            cy="67.55553854013208"
-            r="1.5806435961807592"
-            fill="white" />
-  
-    <circle cx="469.1305262677248"
-            cy="203.79401171895006"
-            r="0.8926998669237651"
-            fill="white" />
-  
-    <circle cx="820.7343883060684"
-            cy="299.83037773207667"
-            r="1.9866944688671229"
-            fill="white" />
-  
-    <circle cx="895.5825733477535"
-            cy="41.78660707179094"
-            r="1.7363064085357038"
-            fill="white" />
-  
-    <circle cx="789.1950668846773"
-            cy="360.50042669351814"
-            r="1.9181524938276815"
-            fill="white" />
-  
-    <circle cx="534.0750062364817"
-            cy="488.77844777345837"
-            r="1.8760141409366229"
-            fill="white" />
-  
-    <circle cx="110.67406823642074"
-            cy="170.91248763205792"
-            r="1.4245684134174437"
-            fill="white" />
-  
-    <circle cx="816.3195890038005"
-            cy="54.45940921424752"
-            r="0.3953241717865259"
-            fill="white" />
-  
-    <circle cx="90.53809300915859"
-            cy="124.24362189447314"
-            r="1.3748551697036429"
-            fill="white" />
-  
-    <circle cx="251.161713143984"
-            cy="144.14779126628352"
-            r="1.0642606080691999"
-            fill="white" />
-  
-</g>
-
-<circle cx="450" cy="250" r="95"
-        fill="cyan"
-        opacity="0.08"
-        filter="url(#glow)"/>
-
+<!-- Core -->
 <circle cx="450" cy="250" r="45"
         fill="cyan"
-        opacity="0.85"
-        filter="url(#glow)">
+        opacity="0.85">
   <animate attributeName="r"
            values="42;52;42"
            dur="4s"
            repeatCount="indefinite"/>
 </circle>
 
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 40s linear infinite;
-    ">
-    <ellipse
-      cx="520"
-      cy="250"
-      rx="4.18"
-      ry="3.135"
-      fill="hsl(192, 80%, 60%)"
-      opacity="0.4166666666666667"
-    />
+  <g style="transform-origin:450px 250px;
+            animation: rotate 40s linear infinite;">
+    <circle cx="530"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
   </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 41.2s linear infinite;
-    ">
-    <ellipse
-      cx="525"
-      cy="250"
-      rx="11.559999999999999"
-      ry="8.669999999999998"
-      fill="hsl(274, 80%, 60%)"
-      opacity="1.1"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 42.4s linear infinite;
-    ">
-    <ellipse
-      cx="530"
-      cy="250"
-      rx="5.8"
-      ry="4.35"
-      fill="hsl(210, 80%, 60%)"
-      opacity="0.5666666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 43.6s linear infinite;
-    ">
-    <ellipse
-      cx="535"
-      cy="250"
-      rx="5.4399999999999995"
-      ry="4.08"
-      fill="hsl(206, 80%, 60%)"
-      opacity="0.5333333333333333"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 44.8s linear infinite;
-    ">
-    <ellipse
-      cx="540"
-      cy="250"
-      rx="4.36"
-      ry="3.2700000000000005"
-      fill="hsl(194, 80%, 60%)"
-      opacity="0.43333333333333335"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 46s linear infinite;
-    ">
-    <ellipse
-      cx="545"
-      cy="250"
-      rx="8.32"
-      ry="6.24"
-      fill="hsl(238, 80%, 60%)"
-      opacity="0.8"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 47.2s linear infinite;
-    ">
-    <ellipse
-      cx="550"
-      cy="250"
-      rx="5.98"
-      ry="4.485"
-      fill="hsl(212, 80%, 60%)"
-      opacity="0.5833333333333334"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 48.4s linear infinite;
-    ">
-    <ellipse
-      cx="555"
-      cy="250"
-      rx="9.76"
-      ry="7.32"
-      fill="hsl(254, 80%, 60%)"
-      opacity="0.9333333333333333"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 49.6s linear infinite;
-    ">
-    <ellipse
-      cx="560"
-      cy="250"
-      rx="5.26"
-      ry="3.945"
-      fill="hsl(204, 80%, 60%)"
-      opacity="0.5166666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 50.8s linear infinite;
-    ">
-    <ellipse
-      cx="565"
-      cy="250"
-      rx="5.08"
-      ry="3.81"
-      fill="hsl(202, 80%, 60%)"
-      opacity="0.5"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 52s linear infinite;
-    ">
-    <ellipse
-      cx="570"
-      cy="250"
-      rx="9.76"
-      ry="7.32"
-      fill="hsl(254, 80%, 60%)"
-      opacity="0.9333333333333333"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 53.2s linear infinite;
-    ">
-    <ellipse
-      cx="575"
-      cy="250"
-      rx="11.559999999999999"
-      ry="8.669999999999998"
-      fill="hsl(274, 80%, 60%)"
-      opacity="1.1"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 54.4s linear infinite;
-    ">
-    <ellipse
-      cx="580"
-      cy="250"
-      rx="5.08"
-      ry="3.81"
-      fill="hsl(202, 80%, 60%)"
-      opacity="0.5"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 55.6s linear infinite;
-    ">
-    <ellipse
-      cx="585"
-      cy="250"
-      rx="5.8"
-      ry="4.35"
-      fill="hsl(210, 80%, 60%)"
-      opacity="0.5666666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 56.8s linear infinite;
-    ">
-    <ellipse
-      cx="590"
-      cy="250"
-      rx="7.96"
-      ry="5.97"
-      fill="hsl(234, 80%, 60%)"
-      opacity="0.7666666666666666"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 58s linear infinite;
-    ">
-    <ellipse
-      cx="595"
-      cy="250"
-      rx="8.68"
-      ry="6.51"
-      fill="hsl(242, 80%, 60%)"
-      opacity="0.8333333333333334"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 59.2s linear infinite;
-    ">
-    <ellipse
-      cx="600"
-      cy="250"
-      rx="12.82"
-      ry="9.615"
-      fill="hsl(288, 80%, 60%)"
-      opacity="1.2166666666666668"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 60.4s linear infinite;
-    ">
-    <ellipse
-      cx="605"
-      cy="250"
-      rx="5.08"
-      ry="3.81"
-      fill="hsl(202, 80%, 60%)"
-      opacity="0.5"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 61.599999999999994s linear infinite;
-    ">
-    <ellipse
-      cx="610"
-      cy="250"
-      rx="9.04"
-      ry="6.779999999999999"
-      fill="hsl(246, 80%, 60%)"
-      opacity="0.8666666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 62.8s linear infinite;
-    ">
-    <ellipse
-      cx="615"
-      cy="250"
-      rx="6.34"
-      ry="4.755"
-      fill="hsl(216, 80%, 60%)"
-      opacity="0.6166666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 64s linear infinite;
-    ">
-    <ellipse
-      cx="620"
-      cy="250"
-      rx="10.84"
-      ry="8.129999999999999"
-      fill="hsl(266, 80%, 60%)"
-      opacity="1.0333333333333332"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 65.2s linear infinite;
-    ">
-    <ellipse
-      cx="625"
-      cy="250"
-      rx="12.459999999999999"
-      ry="9.344999999999999"
-      fill="hsl(284, 80%, 60%)"
-      opacity="1.1833333333333333"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 66.4s linear infinite;
-    ">
-    <ellipse
-      cx="630"
-      cy="250"
-      rx="4.54"
-      ry="3.4050000000000002"
-      fill="hsl(196, 80%, 60%)"
-      opacity="0.45"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 67.6s linear infinite;
-    ">
-    <ellipse
-      cx="635"
-      cy="250"
-      rx="10.120000000000001"
-      ry="7.590000000000001"
-      fill="hsl(258, 80%, 60%)"
-      opacity="0.9666666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 68.8s linear infinite;
-    ">
-    <ellipse
-      cx="640"
-      cy="250"
-      rx="9.219999999999999"
-      ry="6.914999999999999"
-      fill="hsl(248, 80%, 60%)"
-      opacity="0.8833333333333333"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 70s linear infinite;
-    ">
-    <ellipse
-      cx="645"
-      cy="250"
-      rx="8.86"
-      ry="6.645"
-      fill="hsl(244, 80%, 60%)"
-      opacity="0.8500000000000001"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 71.2s linear infinite;
-    ">
-    <ellipse
-      cx="650"
-      cy="250"
-      rx="7.6"
-      ry="5.699999999999999"
-      fill="hsl(230, 80%, 60%)"
-      opacity="0.7333333333333334"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 72.4s linear infinite;
-    ">
-    <ellipse
-      cx="655"
-      cy="250"
-      rx="9.399999999999999"
-      ry="7.049999999999999"
-      fill="hsl(250, 80%, 60%)"
-      opacity="0.9"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 73.6s linear infinite;
-    ">
-    <ellipse
-      cx="660"
-      cy="250"
-      rx="9.399999999999999"
-      ry="7.049999999999999"
-      fill="hsl(250, 80%, 60%)"
-      opacity="0.9"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 74.8s linear infinite;
-    ">
-    <ellipse
-      cx="665"
-      cy="250"
-      rx="4.54"
-      ry="3.4050000000000002"
-      fill="hsl(196, 80%, 60%)"
-      opacity="0.45"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 76s linear infinite;
-    ">
-    <ellipse
-      cx="670"
-      cy="250"
-      rx="7.6"
-      ry="5.699999999999999"
-      fill="hsl(230, 80%, 60%)"
-      opacity="0.7333333333333334"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 77.19999999999999s linear infinite;
-    ">
-    <ellipse
-      cx="675"
-      cy="250"
-      rx="5.8"
-      ry="4.35"
-      fill="hsl(210, 80%, 60%)"
-      opacity="0.5666666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 78.4s linear infinite;
-    ">
-    <ellipse
-      cx="680"
-      cy="250"
-      rx="8.5"
-      ry="6.375"
-      fill="hsl(240, 80%, 60%)"
-      opacity="0.8166666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 79.6s linear infinite;
-    ">
-    <ellipse
-      cx="685"
-      cy="250"
-      rx="12.1"
-      ry="9.075"
-      fill="hsl(280, 80%, 60%)"
-      opacity="1.15"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 80.8s linear infinite;
-    ">
-    <ellipse
-      cx="690"
-      cy="250"
-      rx="10.3"
-      ry="7.7250000000000005"
-      fill="hsl(260, 80%, 60%)"
-      opacity="0.9833333333333334"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 82s linear infinite;
-    ">
-    <ellipse
-      cx="695"
-      cy="250"
-      rx="4.54"
-      ry="3.4050000000000002"
-      fill="hsl(196, 80%, 60%)"
-      opacity="0.45"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 83.19999999999999s linear infinite;
-    ">
-    <ellipse
-      cx="700"
-      cy="250"
-      rx="11.2"
-      ry="8.399999999999999"
-      fill="hsl(270, 80%, 60%)"
-      opacity="1.0666666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 84.4s linear infinite;
-    ">
-    <ellipse
-      cx="705"
-      cy="250"
-      rx="6.16"
-      ry="4.62"
-      fill="hsl(214, 80%, 60%)"
-      opacity="0.6000000000000001"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 85.6s linear infinite;
-    ">
-    <ellipse
-      cx="710"
-      cy="250"
-      rx="12.82"
-      ry="9.615"
-      fill="hsl(288, 80%, 60%)"
-      opacity="1.2166666666666668"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 86.8s linear infinite;
-    ">
-    <ellipse
-      cx="715"
-      cy="250"
-      rx="10.66"
-      ry="7.995"
-      fill="hsl(264, 80%, 60%)"
-      opacity="1.0166666666666666"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 88s linear infinite;
-    ">
-    <ellipse
-      cx="720"
-      cy="250"
-      rx="4.9"
-      ry="3.6750000000000003"
-      fill="hsl(200, 80%, 60%)"
-      opacity="0.48333333333333334"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 89.19999999999999s linear infinite;
-    ">
-    <ellipse
-      cx="725"
-      cy="250"
-      rx="8.86"
-      ry="6.645"
-      fill="hsl(244, 80%, 60%)"
-      opacity="0.8500000000000001"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 90.4s linear infinite;
-    ">
-    <ellipse
-      cx="730"
-      cy="250"
-      rx="5.26"
-      ry="3.945"
-      fill="hsl(204, 80%, 60%)"
-      opacity="0.5166666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 91.6s linear infinite;
-    ">
-    <ellipse
-      cx="735"
-      cy="250"
-      rx="10.48"
-      ry="7.86"
-      fill="hsl(262, 80%, 60%)"
-      opacity="1"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 92.8s linear infinite;
-    ">
-    <ellipse
-      cx="740"
-      cy="250"
-      rx="11.02"
-      ry="8.265"
-      fill="hsl(268, 80%, 60%)"
-      opacity="1.05"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 94s linear infinite;
-    ">
-    <ellipse
-      cx="745"
-      cy="250"
-      rx="9.76"
-      ry="7.32"
-      fill="hsl(254, 80%, 60%)"
-      opacity="0.9333333333333333"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 95.19999999999999s linear infinite;
-    ">
-    <ellipse
-      cx="750"
-      cy="250"
-      rx="8.5"
-      ry="6.375"
-      fill="hsl(240, 80%, 60%)"
-      opacity="0.8166666666666667"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 96.4s linear infinite;
-    ">
-    <ellipse
-      cx="755"
-      cy="250"
-      rx="7.96"
-      ry="5.97"
-      fill="hsl(234, 80%, 60%)"
-      opacity="0.7666666666666666"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 97.6s linear infinite;
-    ">
-    <ellipse
-      cx="760"
-      cy="250"
-      rx="8.68"
-      ry="6.51"
-      fill="hsl(242, 80%, 60%)"
-      opacity="0.8333333333333334"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 98.8s linear infinite;
-    ">
-    <ellipse
-      cx="765"
-      cy="250"
-      rx="8.86"
-      ry="6.645"
-      fill="hsl(244, 80%, 60%)"
-      opacity="0.8500000000000001"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 100s linear infinite;
-    ">
-    <ellipse
-      cx="770"
-      cy="250"
-      rx="4.36"
-      ry="3.2700000000000005"
-      fill="hsl(194, 80%, 60%)"
-      opacity="0.43333333333333335"
-    />
-  </g>
-  
-  <g style="
-      transform-origin:450px 250px;
-      animation: rotate 101.19999999999999s linear infinite;
-    ">
-    <ellipse
-      cx="775"
-      cy="250"
-      rx="6.699999999999999"
-      ry="5.0249999999999995"
-      fill="hsl(220, 80%, 60%)"
-      opacity="0.65"
-    />
-  </g>
-  
-<g filter="url(#glassBlur)">
-  <rect x="250"
-        y="150"
-        width="400"
-        height="200"
-        rx="30"
-        fill="white"
-        opacity="0.05"/>
-</g>
 
-<rect x="250"
-      y="150"
-      width="400"
-      height="200"
-      rx="30"
-      fill="white"
-      opacity="0.03"
-      stroke="white"
-      stroke-opacity="0.25"/>
+  <g style="transform-origin:450px 250px;
+            animation: rotate 41.2s linear infinite;">
+    <circle cx="534"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
 
-<!-- Stats Text -->
-<text x="450" y="190" font-size="20" text-anchor="middle" opacity="0.9">
-  Contribution Universe
-</text>
+  <g style="transform-origin:450px 250px;
+            animation: rotate 42.4s linear infinite;">
+    <circle cx="538"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
 
-<text x="300" y="230" font-size="14" opacity="0.8">
-  Total Commits: 1248
-</text>
+  <g style="transform-origin:450px 250px;
+            animation: rotate 43.6s linear infinite;">
+    <circle cx="542"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
 
-<text x="300" y="255" font-size="14" opacity="0.8">
-  Current Streak: 14 days
-</text>
+  <g style="transform-origin:450px 250px;
+            animation: rotate 44.8s linear infinite;">
+    <circle cx="546"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
 
-<text x="300" y="280" font-size="14" opacity="0.8">
-  Longest Streak: 32 days
-</text>
+  <g style="transform-origin:450px 250px;
+            animation: rotate 46s linear infinite;">
+    <circle cx="550"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
 
-<text x="300" y="305" font-size="14" opacity="0.8">
-  Activity Level: 68%
-</text>
+  <g style="transform-origin:450px 250px;
+            animation: rotate 47.2s linear infinite;">
+    <circle cx="554"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 48.4s linear infinite;">
+    <circle cx="558"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 49.6s linear infinite;">
+    <circle cx="562"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 50.8s linear infinite;">
+    <circle cx="566"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 52s linear infinite;">
+    <circle cx="570"
+            cy="250"
+            r="3.4761904761904763"
+            fill="hsl(185.71428571428572, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 53.2s linear infinite;">
+    <circle cx="574"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 54.4s linear infinite;">
+    <circle cx="578"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 55.6s linear infinite;">
+    <circle cx="582"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 56.8s linear infinite;">
+    <circle cx="586"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 58s linear infinite;">
+    <circle cx="590"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 59.2s linear infinite;">
+    <circle cx="594"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 60.4s linear infinite;">
+    <circle cx="598"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 61.599999999999994s linear infinite;">
+    <circle cx="602"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 62.8s linear infinite;">
+    <circle cx="606"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 64s linear infinite;">
+    <circle cx="610"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 65.2s linear infinite;">
+    <circle cx="614"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 66.4s linear infinite;">
+    <circle cx="618"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 67.6s linear infinite;">
+    <circle cx="622"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 68.8s linear infinite;">
+    <circle cx="626"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 70s linear infinite;">
+    <circle cx="630"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 71.2s linear infinite;">
+    <circle cx="634"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 72.4s linear infinite;">
+    <circle cx="638"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 73.6s linear infinite;">
+    <circle cx="642"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 74.8s linear infinite;">
+    <circle cx="646"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 76s linear infinite;">
+    <circle cx="650"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 77.19999999999999s linear infinite;">
+    <circle cx="654"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 78.4s linear infinite;">
+    <circle cx="658"
+            cy="250"
+            r="3.9523809523809526"
+            fill="hsl(191.42857142857142, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 79.6s linear infinite;">
+    <circle cx="662"
+            cy="250"
+            r="6.333333333333333"
+            fill="hsl(220, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 80.8s linear infinite;">
+    <circle cx="666"
+            cy="250"
+            r="10.619047619047619"
+            fill="hsl(271.42857142857144, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 82s linear infinite;">
+    <circle cx="670"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 83.19999999999999s linear infinite;">
+    <circle cx="674"
+            cy="250"
+            r="5.857142857142857"
+            fill="hsl(214.28571428571428, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 84.4s linear infinite;">
+    <circle cx="678"
+            cy="250"
+            r="3.9523809523809526"
+            fill="hsl(191.42857142857142, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 85.6s linear infinite;">
+    <circle cx="682"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 86.8s linear infinite;">
+    <circle cx="686"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 88s linear infinite;">
+    <circle cx="690"
+            cy="250"
+            r="3.4761904761904763"
+            fill="hsl(185.71428571428572, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 89.19999999999999s linear infinite;">
+    <circle cx="694"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 90.4s linear infinite;">
+    <circle cx="698"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 91.6s linear infinite;">
+    <circle cx="702"
+            cy="250"
+            r="10.142857142857142"
+            fill="hsl(265.7142857142857, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 92.8s linear infinite;">
+    <circle cx="706"
+            cy="250"
+            r="3"
+            fill="hsl(180, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 94s linear infinite;">
+    <circle cx="710"
+            cy="250"
+            r="7.285714285714286"
+            fill="hsl(231.42857142857142, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 95.19999999999999s linear infinite;">
+    <circle cx="714"
+            cy="250"
+            r="4.428571428571429"
+            fill="hsl(197.14285714285714, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 96.4s linear infinite;">
+    <circle cx="718"
+            cy="250"
+            r="6.809523809523809"
+            fill="hsl(225.71428571428572, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 97.6s linear infinite;">
+    <circle cx="722"
+            cy="250"
+            r="8.238095238095237"
+            fill="hsl(242.85714285714286, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 98.8s linear infinite;">
+    <circle cx="726"
+            cy="250"
+            r="10.619047619047619"
+            fill="hsl(271.42857142857144, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 100s linear infinite;">
+    <circle cx="730"
+            cy="250"
+            r="7.761904761904762"
+            fill="hsl(237.14285714285714, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 101.19999999999999s linear infinite;">
+    <circle cx="734"
+            cy="250"
+            r="5.380952380952381"
+            fill="hsl(208.57142857142856, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <g style="transform-origin:450px 250px;
+            animation: rotate 102.4s linear infinite;">
+    <circle cx="738"
+            cy="250"
+            r="13"
+            fill="hsl(300, 80%, 60%)"
+            opacity="0.8"/>
+  </g>
+
+  <!-- Stats -->
+  <text x="450" y="190" font-size="20" text-anchor="middle">
+    Contribution Universe
+  </text>
+
+  <text x="300" y="230" font-size="14">
+    Total Commits (Past Year): 133
+  </text>
 
 </svg>
