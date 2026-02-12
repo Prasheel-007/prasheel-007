@@ -1,4 +1,6 @@
 name: Update Universe SVG
+permissions:
+  contents: write
 
 on:
   schedule:
