@@ -59,6 +59,7 @@ function generateSVG(weeks) {
   const maxWeek = Math.max(...weeklyTotals) || 1;
 
   let svg = `
+  <!-- Generated at ${new Date().toISOString()} -->
 <svg width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}" xmlns="http://www.w3.org/2000/svg">
 
 <style>
