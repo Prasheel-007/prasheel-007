@@ -1,0 +1,29 @@
+name: Update Universe SVG
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # runs daily at midnight
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - run: npm install node-fetch
+
+      - run: node scripts/generate-universe.js
+
+      - name: Commit updated SVG
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add assets/universe.svg
+          git commit -m "Update universe visualization"
+          git push
