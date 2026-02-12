@@ -1,10 +1,11 @@
 name: Update Universe SVG
+
 permissions:
   contents: write
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # runs daily at midnight
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -21,11 +22,13 @@ jobs:
       - run: npm install node-fetch
 
       - run: node scripts/generate-universe.js
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Commit updated SVG
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git add assets/universe.svg
-          git commit -m "Update universe visualization"
+          git commit -m "Update universe visualization" || echo "No changes"
           git push
