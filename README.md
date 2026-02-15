@@ -115,13 +115,10 @@
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=prasheel-007&theme=merko&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 # 📊 GitHub Insights
-
-<p align="center">
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=prasheel-007&layout=compact&theme=github_dark" height="165"/>
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=prasheel-007&show_icons=true&theme=github_dark" height="165"/>
-</p>
-
-
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prasheel-007&layout=compact&theme=vision-friendly-dark" height="150" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=prasheel-007&show_icons=true&theme=vision-friendly-dark" height="150" alt="GitHub Stats" />
+</div>
 
 # 📈 Contribution Graph ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=prasheel-007&theme=merko)
 # 🔝 Top Contributed Repo
