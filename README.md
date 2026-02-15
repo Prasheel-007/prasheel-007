@@ -5,9 +5,8 @@
 <h1 align="center">Prasheel Varma Datla</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&pause=800&color=FFFFFF&center=true&vCenter=true&width=500&lines=Behind+every+magic+lies+logic;Exploring+Technology+and+Philosophy;Building+ideas+into+reality" />
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=22&duration=4200&pause=900&center=true&vCenter=true&width=650&lines=Life+gives+three+choices:+Accept,+Change,+or+Leave.;Magic+fades+when+logic+is+revealed.;Exploring.+Experimenting.+Enhancing.;Technology • Philosophy • Troubleshooting.;Learning,+evolving,+and+striving+to+improve+every+day." />
 </p>
-
 # 💫 About Me:
 🌱 Discovery Phase: Constantly experimenting, learning, and reshaping ideas.<br><br>🔧 Strengths: Troubleshooting, implementation, and backend integration.<br><br>🧩 Philosophy: Magic fades when logic is revealed.<br><br>✨ Identity: Reshapel — decode it to know me.<br><br>⚡ I don’t just use technology—I honor it.
 
