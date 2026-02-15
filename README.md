@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="./assets/prasheel_brand.png" width="150" alt="Prasheel Logo"/>
+</p>
+
+<h1 align="center">Prasheel Varma Datla</h1>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&pause=800&color=FFFFFF&center=true&vCenter=true&width=500&lines=Behind+every+magic+lies+logic;Exploring+Technology+and+Philosophy;Building+ideas+into+reality" />
+</p>
+
 # 💫 About Me:
 🌱 Discovery Phase: Constantly experimenting, learning, and reshaping ideas.<br><br>🔧 Strengths: Troubleshooting, implementation, and backend integration.<br><br>🧩 Philosophy: Magic fades when logic is revealed.<br><br>✨ Identity: Reshapel — decode it to know me.<br><br>⚡ I don’t just use technology—I honor it.
 
