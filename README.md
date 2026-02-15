@@ -110,26 +110,31 @@
 </table>
 
 # 📊 GitHub Stats:
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prasheel-007&theme=merko)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=prasheel-007&theme=merko&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=prasheel-007&theme=merko&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<div align="center">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prasheel-007&theme=gruvbox" alt="Profile Details" />
+    <img src="https://nirzak-streak-stats.vercel.app/?user=prasheel-007&theme=gruvbox&hide_border=false" alt=Streak"/>
+</div>
 
 # 📊 GitHub Insights
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prasheel-007&layout=compact&theme=vision-friendly-dark" height="150" alt="Top Languages" />
-  <img src="https://github-readme-stats.vercel.app/api?username=prasheel-007&show_icons=true&theme=vision-friendly-dark" height="150" alt="GitHub Stats" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=prasheel-007&theme=gruvbox" alt="Languages" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=prasheel-007&theme=gruvbox&layout=compact&hide_border=false" height="165" alt="Most Used Languages" />
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=prasheel-007&show_icons=true&theme=gruvbox&hide_border=false" height="165" alt="GitHub Stats" />
 </div>
 
 # 📈 Contribution Graph ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=prasheel-007&theme=merko)
 # 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=prasheel-007&limit=5&theme=merko&combine_all_yearly_contributions=true)
+![](https://github-contributor-stats.vercel.app/api?username=prasheel-007&limit=5&theme=gruvbox&combine_all_yearly_contributions=true)
 
 # 🌌 Universe
 
 <img src="https://raw.githubusercontent.com/prasheel-007/prasheel-007/main/assets/universe.svg" />
 
 ### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=merko)
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox)
 
 ---
 [![](https://visitcount.itsvg.in/api?id=prasheel-007&icon=8&color=0)](https://visitcount.itsvg.in)
