@@ -15,7 +15,7 @@ Technology never stops evolving, and neither do I. I keep exploring, learning, a
 
 🧩 **Philosophy:** Magic fades when logic is revealed.
 
-⚖️ **Principle:** Life gives three choices --- Accept, Change, or Leave.
+⚖️ **Principle:** Life gives three choices: Accept, Change, or Leave.
 
 ✨ **Identity:** Reshapel -- decode it to know me.
 
