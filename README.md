@@ -17,18 +17,18 @@ Technology never stops evolving, and neither do I. I keep exploring, learning, a
 
 ⚖️ **Principle:** Life gives three choices: Accept, Change, or Leave.
 
-✨ **Identity:** Reshapel -- decode it to know me.
+✨ **Identity:** ReShape-L -- decode it to know me.
 
 
 # 🌐 Socials:
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?logo=firefox&logoColor=%23FF7139)](https://prasheelvarma.github.io) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/prasheelvarma) [![Dev.to](https://img.shields.io/badge/Dev.to-%230A0A0A.svg?logo=dev.to&logoColor=white)](https://dev.to/prasheelvarma) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=reddit&logoColor=white)](https://www.reddit.com/user/Prasheel_Varma) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=pvdatla23@gmail.com)
 
-# 🧰 Tech Stack
+# 🧰 Technologies & Tools
 
 <table>
 
 <tr>
-<td><strong>Core Focus</strong></td>
+<td><strong>Primary Tech</strong></td>
 <td>
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -62,7 +62,7 @@ Technology never stops evolving, and neither do I. I keep exploring, learning, a
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
+![TailWind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) 
 </td>
 </tr>
 
